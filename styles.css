@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  background: #393be5;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+  padding: 20px 0;
+}
+
+.brand h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  margin: 20px 0;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu li:hover {
+  background-color: #9b9ce3;
+  color: white;
+  border-radius: 5px;
+}
+
+.logout a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 18px;
+    display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info .user-name {
+  margin-right: 10px;
+}
+
+.user-info .user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.overview {
+  margin-left: 200px;
+  padding: 35px 50px;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #f4f4f4;
+  width: 500px;
+  overflow-y: hidden;
+}
+
+.overview .header {
+  margin-bottom: 20px;
+}
+
+.kpi {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.kpi-item {
+  background-color: #f0f4f9;
+  padding: 5px;
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+}
+
+.kpi-item h3 {
+  margin: 10px 0;
+}
+
+.kpi-item .growth {
+  font-weight: bold;
+}
+
+.growth.positive {
+  color: green;
+}
+
+.analytics,
+.growth-chart,
+.recent-activity {
+  margin-bottom: 10px;
+}
+
+.analytics canvas {
+  width: 80%;
+  height: auto;
+  max-width: 400px;
+}
+
+.chart {
+  background-color: #eef1f8;
+  height: 100px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead {
+  background-color: #f0f4f9;
+}
+
+table th,
+table td {
+  padding: 15px;
+  text-align: left;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #f0f4f9;
+}
+
+table tbody tr:last-child {
+  border-bottom: none;
+}

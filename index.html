@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <nav>
+      <div class="sidebar">
+        <div class="brand">
+          <h2>Profitize</h2>
+        </div>
+
+        <ul class="menu">
+          <li>Overview</li>
+          <li>Growth</li>
+          <li>Customers</li>
+          <li>Reports</li>
+          <li>Support</li>
+          <li>Settings</li>
+        </ul>
+        <div class="logout">
+          <a href="#">Log out</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content">
+      <!-- Left Section (Overview) -->
+      <section class="overview">
+        <div class="header">
+          <h2>Overview</h2>
+        </div>
+
+        <div class="kpi">
+          <div class="kpi-item">
+            <span>Current MRR</span>
+            <h3>$855.4k</h3>
+            <span class="growth positive">+16%</span>
+          </div>
+          <div class="kpi-item">
+            <span>Current Customers</span>
+            <h3>127,754</h3>
+            <span class="growth positive">+17%</span>
+          </div>
+          <div class="kpi-item">
+            <span>Active Customers</span>
+            <h3>73.57%</h3>
+            <span class="growth positive">+21%</span>
+          </div>
+        </div>
+
+        <div class="analytics">
+          <h3>Analytics</h3>
+          <canvas id="analyticsChart"></canvas>
+        </div>
+      </section>
+
+      <!-- Right Section -->
+      <section class="right-side">
+        <!-- Navbar -->
+        <div class="navbar">
+          <header>
+            <div class="search-bar">
+              <input type="text" placeholder="Search" />
+            </div>
+            <div class="user-info">
+              <span class="user-name">Abel Hendistya</span>
+              <img src="../pertemuan_3/DON00460.JPG" alt="User Avatar" class="user-avatar" />
+            </div>
+          </header>
+        </div>
+
+        <!-- Growth Chart -->
+        <div class="growth-chart">
+          <h3>This Year Growth</h3>
+          <canvas id="growthChart"></canvas>
+        </div>
+
+        <!-- Recent Activity -->
+        <div class="recent-activity">
+          <h3>Recent Activity</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Customer</th>
+                <th>Status</th>
+                <th>Order Number</th>
+                <th>Retained</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jenny Wilson</td>
+                <td>New Customer</td>
+                <td>#0038160</td>
+                <td>1 min ago</td>
+                <td>$123.40</td>
+              </tr>
+              <tr>
+                <td>Guy Hawkins</td>
+                <td>Signed up</td>
+                <td>#0038159</td>
+                <td>5 min ago</td>
+                <td>$79.99</td>
+              </tr>
+              <tr>
+                <td>Ralph Edwards</td>
+                <td>New Customer</td>
+                <td>#0038158</td>
+                <td>24 min ago</td>
+                <td>$217.30</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
